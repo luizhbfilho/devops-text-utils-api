@@ -1,0 +1,28 @@
+{
+  "name": "devops-text-utils-api",
+  "version": "1.0.0",
+  "description": "Simple Express REST API for text utilities - DevOps learning project",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --coverage",
+    "lint": "eslint src tests"
+  },
+  "keywords": ["devops", "express", "api", "docker", "ci-cd"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": ["src/**/*.js", "!src/server.js"]
+  }
+}
